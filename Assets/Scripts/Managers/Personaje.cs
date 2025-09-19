@@ -31,7 +31,7 @@ public class Personaje : MonoBehaviour
         rig.linearVelocity = direccion * velocidad;
 
         // Actualiza el Animator con la magnitud de la velocidad para controlar animaciones
-        anim.SetFloat("velocidad", rig.linearVelocity.magnitude);
+        anim.SetFloat("Camina", rig.linearVelocity.magnitude);
 
         // Voltea el sprite del personaje
         if (horizontal > 0)
