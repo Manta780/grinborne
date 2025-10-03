@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Personaje : MonoBehaviour
@@ -7,11 +8,24 @@ public class Personaje : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spritePersonaje;
 
+    [Header("Sprint")]
+    [SerializeField] private float velocidadBase;
+    [SerializeField] private float velocidadExtra;
+    [SerializeField] private float tiempoSprint;
+    private float tiempoActualSprint;
+    private float tiempoSiguienteSprint;
+    [SerializeField] private float tiempoEntreSprint;
+
+    private bool puedeCorrer = true;
+
+    private bool estaCorriendo = false;
+
     private void Awake()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spritePersonaje = GetComponent<SpriteRenderer>();
+        tiempoActualSprint = tiempoSprint;
     }
 
     private void FixedUpdate()
@@ -41,6 +55,45 @@ public class Personaje : MonoBehaviour
         else if (horizontal < 0)
         {
             spritePersonaje.flipX = true;
+        }
+
+        //Entradas para los controles
+        if (Input.GetKeyDown(KeyCode.LeftShift) && puedeCorrer)
+        {
+            velocidad = velocidadExtra;
+            estaCorriendo = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            velocidad = velocidadBase;
+            estaCorriendo = false;
+        }
+
+        //Tiempo que puede aumentar su velocidad
+        if (Mathf.Abs(rig.linearVelocity.x) >= 0.1f && estaCorriendo)
+        {
+            if (tiempoActualSprint > 0)
+            {
+                tiempoActualSprint -= Time.deltaTime;
+            }
+            else
+            {
+                velocidad = velocidadBase;
+                estaCorriendo = false;
+                puedeCorrer = false;
+                tiempoSiguienteSprint = Time.time + tiempoEntreSprint;
+            }
+        }
+
+        //Recuperacion para capacidad de correr
+        if (!estaCorriendo && tiempoActualSprint <= tiempoSprint && Time.time >= tiempoSiguienteSprint)
+        {
+            tiempoActualSprint += Time.deltaTime;
+            if (tiempoActualSprint >= tiempoSprint)
+            {
+                puedeCorrer = true;
+            }
         }
     }
 }
