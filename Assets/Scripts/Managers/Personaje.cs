@@ -8,6 +8,9 @@ public class Personaje : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spritePersonaje;
 
+    private bool estaTalando = false;
+    private ArbolInteractivo arbolCercano;
+
     [Header("Sprint")]
     [SerializeField] private float velocidadBase;
     [SerializeField] private float velocidadExtra;
@@ -17,7 +20,6 @@ public class Personaje : MonoBehaviour
     [SerializeField] private float tiempoEntreSprint;
 
     private bool puedeCorrer = true;
-
     private bool estaCorriendo = false;
 
     private void Awake()
@@ -28,9 +30,21 @@ public class Personaje : MonoBehaviour
         tiempoActualSprint = tiempoSprint;
     }
 
+    private void Update()
+    {
+        // 🔹 Si presiona E y está cerca de un árbol
+        if (Input.GetKeyDown(KeyCode.E) && !estaTalando && arbolCercano != null && arbolCercano.JugadorCerca)
+        {
+            StartCoroutine(TalarAnimacion());
+        }
+    }
+
     private void FixedUpdate()
     {
-        Mover();
+        if (!estaTalando)
+            Mover();
+        else
+            rig.linearVelocity = Vector2.zero; // Detener movimiento al talar
     }
 
     private void Mover()
@@ -38,26 +52,15 @@ public class Personaje : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        // Normaliza el vector para evitar que la velocidad sea mayor en diagonal
         Vector2 direccion = new Vector2(horizontal, vertical).normalized;
-
-        // Aplica el movimiento al Rigidbody2D
         rig.linearVelocity = direccion * velocidad;
 
-        // Actualiza el Animator con la magnitud de la velocidad para controlar animaciones
         anim.SetFloat("Camina", rig.linearVelocity.magnitude);
 
-        // Voltea el sprite del personaje
-        if (horizontal > 0)
-        {
-            spritePersonaje.flipX = false;
-        }
-        else if (horizontal < 0)
-        {
-            spritePersonaje.flipX = true;
-        }
+        if (horizontal > 0) spritePersonaje.flipX = false;
+        else if (horizontal < 0) spritePersonaje.flipX = true;
 
-        //Entradas para los controles
+        // Sprint (igual que antes)
         if (Input.GetKeyDown(KeyCode.LeftShift) && puedeCorrer)
         {
             velocidad = velocidadExtra;
@@ -70,7 +73,6 @@ public class Personaje : MonoBehaviour
             estaCorriendo = false;
         }
 
-        //Tiempo que puede aumentar su velocidad
         if (Mathf.Abs(rig.linearVelocity.x) >= 0.1f && estaCorriendo)
         {
             if (tiempoActualSprint > 0)
@@ -86,7 +88,6 @@ public class Personaje : MonoBehaviour
             }
         }
 
-        //Recuperacion para capacidad de correr
         if (!estaCorriendo && tiempoActualSprint <= tiempoSprint && Time.time >= tiempoSiguienteSprint)
         {
             tiempoActualSprint += Time.deltaTime;
@@ -95,5 +96,30 @@ public class Personaje : MonoBehaviour
                 puedeCorrer = true;
             }
         }
+    }
+
+    private System.Collections.IEnumerator TalarAnimacion()
+    {
+        estaTalando = true;
+        anim.SetTrigger("talar");
+
+        // Espera la duración de tu animación (ajusta el tiempo)
+        yield return new WaitForSeconds(0.8f);
+
+        estaTalando = false;
+        anim.ResetTrigger("talar");
+        anim.SetFloat("Camina", 0f); // volver a Idle
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Arbol"))
+            arbolCercano = other.GetComponent<ArbolInteractivo>();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Arbol"))
+            arbolCercano = null;
     }
 }

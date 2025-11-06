@@ -9,9 +9,11 @@ public class TreeChop : MonoBehaviour
     public int hitsToChop = 5;
     public KeyCode chopKey = KeyCode.E;
     public GameObject interactionUI;
+    public float chopCooldown = 1.082f; // ⏱ Duración de la animación / cooldown
 
     private int currentHits = 0;
     private bool playerInRange = false;
+    private bool canChop = true;
     private Transform player;
     private Vector3 originalPosition;
 
@@ -32,17 +34,31 @@ public class TreeChop : MonoBehaviour
             if (interactionUI != null)
                 interactionUI.SetActive(playerInRange);
 
-            if (playerInRange && Input.GetKeyDown(chopKey))
+            if (playerInRange && Input.GetKeyDown(chopKey) && canChop)
             {
-                StartCoroutine(ChopAnimation());
-                currentHits++;
-
-                if (currentHits >= hitsToChop)
-                {
-                    ChopDownTree();
-                }
+                StartCoroutine(HandleChop());
             }
         }
+    }
+
+    private IEnumerator HandleChop()
+    {
+        canChop = false;
+
+        // Ejecuta la animación de vibración del árbol
+        yield return StartCoroutine(ChopAnimation());
+
+        currentHits++;
+
+        if (currentHits >= hitsToChop)
+        {
+            ChopDownTree();
+        }
+
+        // Espera el cooldown antes de permitir otro golpe
+        yield return new WaitForSeconds(chopCooldown);
+
+        canChop = true;
     }
 
     private IEnumerator ChopAnimation()
