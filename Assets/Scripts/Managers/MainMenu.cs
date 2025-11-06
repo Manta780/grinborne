@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void NewGame()
     {
-        SceneManager.LoadScene("Start2D"); // Cambia por tu escena inicial
+        SceneManager.LoadScene("introScene"); // Cambia por tu escena inicial
     }
 
     public void LoadGame()
