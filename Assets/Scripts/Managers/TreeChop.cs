@@ -9,7 +9,7 @@ public class TreeChop : MonoBehaviour
     public int hitsToChop = 5;
     public KeyCode chopKey = KeyCode.E;
     public GameObject interactionUI;
-    public float chopCooldown = 1.833f; // ⏱ Duración de la animación / cooldown
+    public float chopCooldown = 2.083f; // ⏱ Duración de la animación / cooldown
 
     private int currentHits = 0;
     private bool playerInRange = false;
