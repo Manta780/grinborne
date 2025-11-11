@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Arbol
+  - FishingZone
   layers:
   - Default
   - TransparentFX
