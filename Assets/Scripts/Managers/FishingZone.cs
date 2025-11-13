@@ -5,14 +5,15 @@ public class FishingZone : MonoBehaviour
 {
     [Header("Configuración de interacción")]
     public KeyCode fishKey = KeyCode.E;
-    public GameObject interactionUI; // Texto o ícono "Presiona E para pescar"
+    public GameObject interactionUI;
 
     [Header("Pesca")]
-    public float fishingDuration = 6.783f; // Duración exacta de la animación de pesca
+    public float fishingDuration = 6.783f; // duración exacta de la animación
     private bool canFish = true;
     private bool playerInZone = false;
     private Transform player;
     private Animator playerAnimator;
+    private MonoBehaviour playerMovement;
     private Rigidbody2D playerRb;
 
     private void Start()
@@ -33,26 +34,19 @@ public class FishingZone : MonoBehaviour
     {
         canFish = false;
 
-        Debug.Log("🎣 Iniciando animación de pesca...");
-
-        // ✅ Bloquear movimiento temporalmente (si el jugador tiene Rigidbody2D)
         if (playerRb != null)
             playerRb.linearVelocity = Vector2.zero;
 
-        var playerMovement = player.GetComponent<MonoBehaviour>();
         if (playerMovement != null)
-            playerMovement.enabled = false; // Desactiva el script de movimiento si lo tienes
+            playerMovement.enabled = false;
 
-        // ✅ Activar animación "Pescar" (asegúrate de tener el trigger 'Pescar' en el Animator)
         if (playerAnimator != null)
             playerAnimator.SetTrigger("Pescar");
 
-        // ⏱ Espera la duración de la animación antes de liberar el movimiento
+        // Espera la duración exacta de la animación
         yield return new WaitForSeconds(fishingDuration);
 
-        Debug.Log("✅ Pesca completada (podrías obtener un pez aquí)");
-
-        // ✅ Reactivar movimiento
+        // Regresa automáticamente a idle y habilita movimiento
         if (playerMovement != null)
             playerMovement.enabled = true;
 
@@ -66,12 +60,13 @@ public class FishingZone : MonoBehaviour
             player = collision.transform;
             playerAnimator = player.GetComponent<Animator>();
             playerRb = player.GetComponent<Rigidbody2D>();
-            playerInZone = true;
 
+            // busca automáticamente tu script de movimiento
+            playerMovement = player.GetComponent<MonoBehaviour>();
+
+            playerInZone = true;
             if (interactionUI != null)
                 interactionUI.SetActive(true);
-
-            Debug.Log("Entraste a zona de pesca");
         }
     }
 
@@ -82,12 +77,11 @@ public class FishingZone : MonoBehaviour
             player = null;
             playerAnimator = null;
             playerRb = null;
+            playerMovement = null;
             playerInZone = false;
 
             if (interactionUI != null)
                 interactionUI.SetActive(false);
-
-            Debug.Log("Saliste de la zona de pesca");
         }
     }
 
