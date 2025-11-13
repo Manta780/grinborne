@@ -5,13 +5,15 @@ public class FishingZone : MonoBehaviour
 {
     [Header("Configuración de interacción")]
     public KeyCode fishKey = KeyCode.E;
-    public GameObject interactionUI; // Asigna aquí el texto o ícono "Presiona E para pescar"
+    public GameObject interactionUI; // Texto o ícono "Presiona E para pescar"
 
     [Header("Pesca")]
-    public float fishingCooldown = 1.082f; // Duración de la animación o tiempo entre pescas
+    public float fishingDuration = 6.783f; // Duración exacta de la animación de pesca
     private bool canFish = true;
     private bool playerInZone = false;
     private Transform player;
+    private Animator playerAnimator;
+    private Rigidbody2D playerRb;
 
     private void Start()
     {
@@ -32,14 +34,27 @@ public class FishingZone : MonoBehaviour
         canFish = false;
 
         Debug.Log("🎣 Iniciando animación de pesca...");
-        // 👉 Aquí puedes activar la animación del personaje
-        // Ejemplo: player.GetComponent<Animator>().SetTrigger("Pescar");
 
-        // Espera el tiempo que dura la animación o cooldown
-        yield return new WaitForSeconds(fishingCooldown);
+        // ✅ Bloquear movimiento temporalmente (si el jugador tiene Rigidbody2D)
+        if (playerRb != null)
+            playerRb.linearVelocity = Vector2.zero;
 
-        // Aquí podrías añadir lógica de éxito o ítem obtenido
-        Debug.Log("✅ Pesca completada (podrías obtener un pez)");
+        var playerMovement = player.GetComponent<MonoBehaviour>();
+        if (playerMovement != null)
+            playerMovement.enabled = false; // Desactiva el script de movimiento si lo tienes
+
+        // ✅ Activar animación "Pescar" (asegúrate de tener el trigger 'Pescar' en el Animator)
+        if (playerAnimator != null)
+            playerAnimator.SetTrigger("Pescar");
+
+        // ⏱ Espera la duración de la animación antes de liberar el movimiento
+        yield return new WaitForSeconds(fishingDuration);
+
+        Debug.Log("✅ Pesca completada (podrías obtener un pez aquí)");
+
+        // ✅ Reactivar movimiento
+        if (playerMovement != null)
+            playerMovement.enabled = true;
 
         canFish = true;
     }
@@ -49,6 +64,8 @@ public class FishingZone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player = collision.transform;
+            playerAnimator = player.GetComponent<Animator>();
+            playerRb = player.GetComponent<Rigidbody2D>();
             playerInZone = true;
 
             if (interactionUI != null)
@@ -63,6 +80,8 @@ public class FishingZone : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             player = null;
+            playerAnimator = null;
+            playerRb = null;
             playerInZone = false;
 
             if (interactionUI != null)
