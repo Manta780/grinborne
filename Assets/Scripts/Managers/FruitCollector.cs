@@ -72,9 +72,11 @@ public class FruitCollector : MonoBehaviour
 
     private void ReplaceWithTreeWithoutFruits()
     {
+        QuestManager.Instance.AddFruit();
         Instantiate(treeWithoutFruitsPrefab, transform.position, transform.rotation);
         Destroy(gameObject);
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

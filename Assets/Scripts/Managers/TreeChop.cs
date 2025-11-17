@@ -82,9 +82,11 @@ public class TreeChop : MonoBehaviour
 
     private void ChopDownTree()
     {
+        QuestManager.Instance.AddWood();
         Instantiate(stumpPrefab, transform.position, transform.rotation);
         Destroy(gameObject);
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

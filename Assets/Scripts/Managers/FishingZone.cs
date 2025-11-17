@@ -46,11 +46,12 @@ public class FishingZone : MonoBehaviour
         // Espera la duración exacta de la animación
         yield return new WaitForSeconds(fishingDuration);
 
-        // Regresa automáticamente a idle y habilita movimiento
         if (playerMovement != null)
             playerMovement.enabled = true;
 
         canFish = true;
+
+        QuestManager.Instance.AddFish();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
