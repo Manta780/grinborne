@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DepositShelf
   depositKey: 101
+  interactionUI: {fileID: 0}
+  fullShelfPrefab: {fileID: 0}
 --- !u!61 &8992291999582867092
 BoxCollider2D:
   m_ObjectHideFlags: 0

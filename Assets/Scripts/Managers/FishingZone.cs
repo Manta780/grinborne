@@ -8,12 +8,12 @@ public class FishingZone : MonoBehaviour
     public GameObject interactionUI;
 
     [Header("Pesca")]
-    public float fishingDuration = 6.783f; // duración exacta de la animación
+    public float fishingDuration = 6.783f; 
     private bool canFish = true;
     private bool playerInZone = false;
     private Transform player;
     private Animator playerAnimator;
-    private MonoBehaviour playerMovement;
+    private Personaje playerMovement;  // <--- Tu script real
     private Rigidbody2D playerRb;
 
     private void Start()
@@ -38,21 +38,21 @@ public class FishingZone : MonoBehaviour
             playerRb.linearVelocity = Vector2.zero;
 
         if (playerMovement != null)
-            playerMovement.enabled = false;
+            playerMovement.estaPescando = true;
 
         if (playerAnimator != null)
             playerAnimator.SetTrigger("Pescar");
 
-        // Espera la duración exacta de la animación
         yield return new WaitForSeconds(fishingDuration);
 
         if (playerMovement != null)
-            playerMovement.enabled = true;
+            playerMovement.estaPescando = false;
 
         canFish = true;
 
         QuestManager.Instance.AddFish();
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -62,10 +62,11 @@ public class FishingZone : MonoBehaviour
             playerAnimator = player.GetComponent<Animator>();
             playerRb = player.GetComponent<Rigidbody2D>();
 
-            // busca automáticamente tu script de movimiento
-            playerMovement = player.GetComponent<MonoBehaviour>();
+            // Aquí obtienes tu script Personaje
+            playerMovement = player.GetComponent<Personaje>();
 
             playerInZone = true;
+
             if (interactionUI != null)
                 interactionUI.SetActive(true);
         }
@@ -79,16 +80,11 @@ public class FishingZone : MonoBehaviour
             playerAnimator = null;
             playerRb = null;
             playerMovement = null;
+
             playerInZone = false;
 
             if (interactionUI != null)
                 interactionUI.SetActive(false);
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = new Color(0f, 0.6f, 1f, 0.4f);
-        Gizmos.DrawWireCube(transform.position, GetComponent<Collider2D>().bounds.size);
     }
 }

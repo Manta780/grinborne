@@ -119,8 +119,16 @@ public class QuestManager : MonoBehaviour
     // ------------------------------
     private void ActivateDepositMission()
     {
+        // 🔥 Ocultar textos de las misiones principales
+        fruitText.gameObject.SetActive(false);
+        woodText.gameObject.SetActive(false);
+        fishText.gameObject.SetActive(false);
+        trapText.gameObject.SetActive(false);
+
+        // 🔥 Mostrar misión de depositar
         depositText.gameObject.SetActive(true);
         depositText.text = "Deposita los recursos en la estantería";
+
         shelfEmpty.SetActive(true);
     }
 

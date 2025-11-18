@@ -21,6 +21,7 @@ public class Personaje : MonoBehaviour
 
     private bool puedeCorrer = true;
     private bool estaCorriendo = false;
+    public bool estaPescando = false;
 
     private void Awake()
     {
@@ -41,10 +42,14 @@ public class Personaje : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!estaTalando)
-            Mover();
-        else
-            rig.linearVelocity = Vector2.zero; // Detener movimiento al talar
+        // Bloquea movimiento mientras tala o pesca
+        if (estaTalando || estaPescando)
+        {
+            rig.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        Mover();
     }
 
     private void Mover()
