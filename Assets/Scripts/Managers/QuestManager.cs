@@ -1,12 +1,13 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance;
 
     [Header("Objetivos de la misión")]
-    public int goalFruit = 20;
+    public int goalFruit = 5;
     public int goalWood = 5;
     public int goalFish = 5;
     public int goalTraps = 3;
@@ -22,13 +23,18 @@ public class QuestManager : MonoBehaviour
     public TextMeshProUGUI woodText;
     public TextMeshProUGUI fishText;
     public TextMeshProUGUI trapText;
+
     public TextMeshProUGUI depositText;
+    public TextMeshProUGUI sleepText;   // ⭐ NUEVO
 
     [Header("Control de misiones")]
     public bool fruitDone = false;
     public bool woodDone = false;
     public bool fishDone = false;
     public bool trapDone = false;
+
+    public bool depositDone = false; // ⭐ NUEVO
+    public bool sleepMissionActive = false;
 
     [Header("Estantería final")]
     public GameObject shelfEmpty;
@@ -44,7 +50,9 @@ public class QuestManager : MonoBehaviour
     {
         UpdateUI();
         shelfFull.SetActive(false);
+
         depositText.gameObject.SetActive(false);
+        sleepText.gameObject.SetActive(false);   // ⭐ nuevo
     }
 
     // ------------------------------
@@ -115,17 +123,17 @@ public class QuestManager : MonoBehaviour
     }
 
     // ------------------------------
-    // MISIÓN FINAL
+    // MISIÓN FINAL 1: DEPOSITAR
     // ------------------------------
     private void ActivateDepositMission()
     {
-        // 🔥 Ocultar textos de las misiones principales
+        // Ocultar misiones principales
         fruitText.gameObject.SetActive(false);
         woodText.gameObject.SetActive(false);
         fishText.gameObject.SetActive(false);
         trapText.gameObject.SetActive(false);
 
-        // 🔥 Mostrar misión de depositar
+        // Mostrar misión
         depositText.gameObject.SetActive(true);
         depositText.text = "Deposita los recursos en la estantería";
 
@@ -134,9 +142,38 @@ public class QuestManager : MonoBehaviour
 
     public void DepositResources()
     {
+        if (depositDone) return;
+
+        depositDone = true;
+
         shelfEmpty.SetActive(false);
         shelfFull.SetActive(true);
 
         depositText.text = "¡Misión completada!";
+        StartCoroutine(HideDepositMessage());
+
+        ActivateSleepMission();  // ⭐ Activar misión de dormir
+    }
+
+    IEnumerator HideDepositMessage()
+    {
+        yield return new WaitForSeconds(2f);
+        depositText.gameObject.SetActive(false);
+    }
+
+    // ------------------------------
+    // MISIÓN FINAL 2: IR A DORMIR
+    // ------------------------------
+    private void ActivateSleepMission()
+    {
+        sleepMissionActive = true;
+
+        sleepText.text = "Ve a dormir";
+        sleepText.gameObject.SetActive(true);
+    }
+
+    public void CompleteSleepMission()
+    {
+        sleepText.text = "Durmiendo...";
     }
 }
