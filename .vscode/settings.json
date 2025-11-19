@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Grinborne 2D.sln"
+    "dotnet.defaultSolution": "grinborne.sln"
 }
