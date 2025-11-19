@@ -6,8 +6,13 @@ public class SleepCinematic : MonoBehaviour
 {
     public static SleepCinematic Instance;
 
-    public Image blackScreen;      // pantalla negra
-    public Image jumpscareImage;   // imagen del jumpscare
+    [Header("UI")]
+    public Image blackScreen;      
+    public Image jumpscareImage;   
+
+    [Header("Audio")]
+    public AudioSource audioSource;        // arrastras un AudioSource aquí
+    public AudioClip jumpscareSound;       // arrastras sonido de jumpscare
 
     public float fadeSpeed = 1f;
 
@@ -20,8 +25,6 @@ public class SleepCinematic : MonoBehaviour
         jumpscareImage.gameObject.SetActive(false);
     }
 
-
-
     public void StartSleepSequence()
     {
         StartCoroutine(FadeAndJumpscare());
@@ -29,7 +32,7 @@ public class SleepCinematic : MonoBehaviour
 
     IEnumerator FadeAndJumpscare()
     {
-        // FADE-IN (cerrar ojos)
+        // FADE-IN
         float alpha = 0;
 
         while (alpha < 1f)
@@ -39,16 +42,16 @@ public class SleepCinematic : MonoBehaviour
             yield return null;
         }
 
-        // Esperar un momento en negro total
+        // pequeña pausa
         yield return new WaitForSeconds(0.3f);
 
-        // Mostrar jumpscare
+        // ----------🔥 AQUÍ APARECE EL JUMPSCARE ----------
         jumpscareImage.gameObject.SetActive(true);
 
-        // Jumpscare dura un poco
-        yield return new WaitForSeconds(1.5f);
+        if (audioSource != null && jumpscareSound != null)
+            audioSource.PlayOneShot(jumpscareSound); // 🔥 Sonido del jumpscare
 
-        // Aquí puedes cargar la siguiente escena
-        // SceneManager.LoadScene("Escena_Del_Nuevo_Protagonista");
+        // esperar
+        yield return new WaitForSeconds(1.5f);
     }
 }

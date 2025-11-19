@@ -8,11 +8,19 @@ public class CambioEscena : MonoBehaviour
     [Header("Tag del jugador")]
     public string tagJugador = "Player";
 
-    [Header("Sonido de puerta (arrastra el clip y el AudioSource)")]
-    public AudioSource audioSource;     // Fuente de sonido (el AudioSource del objeto puerta)
-    public AudioClip sonidoPuertaAbierta;  // Clip de sonido de abrir puerta
+    [Header("Sonidos de puerta")]
+    public AudioSource audioSource;           // SfxAudio
+    public AudioClip sonidoPuertaAbierta;     // abrir puerta
+    public AudioClip sonidoPuertaCerrada;     // cerrar puerta
 
-    private bool enProceso = false;  // Evita múltiples activaciones
+    [Header("Sonido de ambiente")]
+    public AudioSource ambientSource;         // AmbientAudio
+    public AudioClip ambientClip;             // sonido del bosque
+
+    [Header("Configuración de esta puerta")]
+    public bool entrandoCasa; // true = entrando, false = saliendo
+
+    private bool enProceso = false;  // evita múltiples activaciones
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,16 +28,37 @@ public class CambioEscena : MonoBehaviour
         {
             enProceso = true;
 
-            // Reproducir sonido
-            if (audioSource != null && sonidoPuertaAbierta != null)
-                audioSource.PlayOneShot(sonidoPuertaAbierta);
+            // --- SONIDOS ---
+            if (entrandoCasa)
+            {
+                // Abrir puerta
+                if (audioSource && sonidoPuertaAbierta)
+                    audioSource.PlayOneShot(sonidoPuertaAbierta);
 
-            // Teletransportar al jugador
+                // Apagar sonido del bosque al entrar
+                if (ambientSource)
+                    ambientSource.Stop();
+            }
+            else
+            {
+                // Cerrar puerta
+                if (audioSource && sonidoPuertaCerrada)
+                    audioSource.PlayOneShot(sonidoPuertaCerrada);
+
+                // Encender sonido del bosque al salir
+                if (ambientSource && ambientClip)
+                {
+                    ambientSource.clip = ambientClip;
+                    ambientSource.loop = true;
+                    ambientSource.Play();
+                }
+            }
+
+            // --- TELETRANSPORTAR ---
             other.transform.position = puntoDestino.position;
-            Debug.Log("Jugador teletransportado a: " + puntoDestino.position);
 
-            // Evitar que se active varias veces seguidas
-            Invoke(nameof(ResetTP), 0.5f);
+            // Reset
+            Invoke(nameof(ResetTP), 0.4f);
         }
     }
 
