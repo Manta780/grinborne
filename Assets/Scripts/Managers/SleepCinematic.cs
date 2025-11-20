@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;   // ← IMPORTANTE para cambiar escenas
 using System.Collections;
 
 public class SleepCinematic : MonoBehaviour
@@ -11,10 +12,12 @@ public class SleepCinematic : MonoBehaviour
     public Image jumpscareImage;   
 
     [Header("Audio")]
-    public AudioSource audioSource;        // arrastras un AudioSource aquí
-    public AudioClip jumpscareSound;       // arrastras sonido de jumpscare
+    public AudioSource audioSource;
+    public AudioClip jumpscareSound;
 
+    [Header("Cinemática")]
     public float fadeSpeed = 1f;
+    public string nextSceneName = "IntroCinematicScene";   // ← Nombre de la escena destino
 
     private void Awake()
     {
@@ -32,7 +35,7 @@ public class SleepCinematic : MonoBehaviour
 
     IEnumerator FadeAndJumpscare()
     {
-        // FADE-IN
+        // ---------- FADE-IN NEGRO ----------
         float alpha = 0;
 
         while (alpha < 1f)
@@ -42,16 +45,19 @@ public class SleepCinematic : MonoBehaviour
             yield return null;
         }
 
-        // pequeña pausa
+        // Pausa ligera
         yield return new WaitForSeconds(0.3f);
 
-        // ----------🔥 AQUÍ APARECE EL JUMPSCARE ----------
+        // ---------- JUMPSCARE ----------
         jumpscareImage.gameObject.SetActive(true);
 
         if (audioSource != null && jumpscareSound != null)
-            audioSource.PlayOneShot(jumpscareSound); // 🔥 Sonido del jumpscare
+            audioSource.PlayOneShot(jumpscareSound);
 
-        // esperar
+        // Tiempo del jumpscare
         yield return new WaitForSeconds(1.5f);
+
+        // ---------- 🔥 CARGAR LA SIGUIENTE ESCENA ----------
+        SceneManager.LoadScene(nextSceneName);
     }
 }
