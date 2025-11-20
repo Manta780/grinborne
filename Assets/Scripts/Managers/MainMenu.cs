@@ -10,8 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        Debug.Log("Cargar partida (a implementar)");
-        // Aquí luego puedes cargar datos de guardado
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void OpenSettings()

@@ -41,5 +41,12 @@ public class DiaryInteraction : MonoBehaviour
     {
         DiaryUI.Instance.CloseDiary();
         diaryOpen = false;
+
+        // 🔥 Activar evento del monstruo SOLO la primera vez
+        if (!QuestManager2.Instance.diaryRead)
+        {
+            QuestManager2.Instance.ReadDiary();
+            MonsterEvent.Instance.SpawnMonsterEvent();
+        }
     }
 }

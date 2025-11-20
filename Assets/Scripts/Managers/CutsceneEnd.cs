@@ -13,6 +13,6 @@ public class CutsceneEnd : MonoBehaviour
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        SceneManager.LoadScene("Start2D");
+        SceneManager.LoadScene("Continuacion2D");
     }
 }
