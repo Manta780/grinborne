@@ -4,6 +4,7 @@ public class DiaryInteraction : MonoBehaviour
 {
     private bool canReadDiary = false;
     private bool diaryOpen = false;
+    private bool isNearDiary = false;
 
     public void EnableDiary(bool state)
     {
@@ -11,15 +12,19 @@ public class DiaryInteraction : MonoBehaviour
         Debug.Log("Lectura del diario: " + (state ? "Activada" : "Desactivada"));
     }
 
+    public void SetNearDiary(bool state)
+    {
+        isNearDiary = state;
+    }
+
     private void Update()
     {
-        // Abrir diario con E
-        if (canReadDiary && !diaryOpen && Input.GetKeyDown(KeyCode.E))
+        // Abrir diario SOLO si está desbloqueado Y está cerca del objeto
+        if (canReadDiary && isNearDiary && !diaryOpen && Input.GetKeyDown(KeyCode.E))
         {
             AbrirDiario();
         }
 
-        // Cerrar diario con ESC
         if (diaryOpen && Input.GetKeyDown(KeyCode.Escape))
         {
             CerrarDiario();
@@ -28,25 +33,13 @@ public class DiaryInteraction : MonoBehaviour
 
     void AbrirDiario()
     {
-        if (DiaryUI.Instance != null)
-        {
-            DiaryUI.Instance.OpenDiary();
-            diaryOpen = true;
-            Debug.Log("📖 Diario abierto.");
-        }
-        else
-        {
-            Debug.LogError("❌ No hay instancia de DiaryUI en la escena.");
-        }
+        DiaryUI.Instance.OpenDiary();
+        diaryOpen = true;
     }
 
     void CerrarDiario()
     {
-        if (DiaryUI.Instance != null)
-        {
-            DiaryUI.Instance.CloseDiary();
-            diaryOpen = false;
-            Debug.Log("📕 Diario cerrado.");
-        }
+        DiaryUI.Instance.CloseDiary();
+        diaryOpen = false;
     }
 }
