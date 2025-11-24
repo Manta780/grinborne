@@ -6,6 +6,10 @@ public class DiaryInteraction : MonoBehaviour
     private bool diaryOpen = false;
     private bool isNearDiary = false;
 
+    [Header("Sonido al cerrar el diario")]
+    public AudioSource audioSource;     // AudioSource para reproducir efectos
+    public AudioClip closeDiarySound;   // Sonido al cerrar
+
     public void EnableDiary(bool state)
     {
         canReadDiary = state;
@@ -19,7 +23,6 @@ public class DiaryInteraction : MonoBehaviour
 
     private void Update()
     {
-        // Abrir diario SOLO si está desbloqueado Y está cerca del objeto
         if (canReadDiary && isNearDiary && !diaryOpen && Input.GetKeyDown(KeyCode.E))
         {
             AbrirDiario();
@@ -41,6 +44,12 @@ public class DiaryInteraction : MonoBehaviour
     {
         DiaryUI.Instance.CloseDiary();
         diaryOpen = false;
+
+        // ▶️ Reproducir sonido al cerrar el diario
+        if (audioSource && closeDiarySound)
+        {
+            audioSource.PlayOneShot(closeDiarySound);
+        }
 
         // 🔥 Activar evento del monstruo SOLO la primera vez
         if (!QuestManager2.Instance.diaryRead)
