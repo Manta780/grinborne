@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 463d196a1c493a24d9dafe49d4660023
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2860427132041990759
+    second: personajes_tirados_0
+  - first:
+      213: -1392246222226352267
+    second: personajes_tirados_1
+  - first:
+      213: 751044168462227459
+    second: personajes_tirados_2
+  - first:
+      213: -2076809229420686984
+    second: personajes_tirados_3
+  - first:
+      213: 2964513542057983783
+    second: personajes_tirados_4
+  - first:
+      213: 6607900052905298311
+    second: personajes_tirados_5
+  - first:
+      213: -4115326629939878706
+    second: personajes_tirados_6
+  - first:
+      213: -6218076827482850447
+    second: personajes_tirados_7
+  - first:
+      213: 3411371754526408435
+    second: personajes_tirados_8
+  - first:
+      213: -2841659679456239483
+    second: personajes_tirados_9
+  - first:
+      213: 3361312712288775977
+    second: personajes_tirados_10
+  - first:
+      213: -3298398006119703460
+    second: personajes_tirados_11
+  - first:
+      213: -6400815686110464962
+    second: personajes_tirados_12
+  - first:
+      213: -722714871201051785
+    second: personajes_tirados_13
+  - first:
+      213: 795497255320072783
+    second: personajes_tirados_14
+  - first:
+      213: -183690355210537948
+    second: personajes_tirados_15
+  - first:
+      213: 1788503821579413675
+    second: personajes_tirados_16
+  - first:
+      213: 5161414517473059018
+    second: personajes_tirados_17
+  - first:
+      213: 8986911555986384749
+    second: personajes_tirados_18
+  - first:
+      213: 6258720720903962236
+    second: personajes_tirados_19
+  - first:
+      213: 4453376020026137876
+    second: personajes_tirados_20
+  - first:
+      213: -1227428949836541467
+    second: personajes_tirados_21
+  - first:
+      213: 1225965604208189530
+    second: personajes_tirados_22
+  - first:
+      213: 674986841762138883
+    second: personajes_tirados_23
+  - first:
+      213: -7814511103318687943
+    second: personajes_tirados_24
+  - first:
+      213: 1787480304881230365
+    second: personajes_tirados_25
+  - first:
+      213: 7331858154521230028
+    second: personajes_tirados_26
+  - first:
+      213: 6708035318756800120
+    second: personajes_tirados_27
+  - first:
+      213: 5310769016987128439
+    second: personajes_tirados_28
+  - first:
+      213: 2715507349208683302
+    second: personajes_tirados_29
+  - first:
+      213: 8646944342820882045
+    second: personajes_tirados_30
+  - first:
+      213: 5396570604565434412
+    second: personajes_tirados_31
+  - first:
+      213: 7622272910371949295
+    second: personajes_tirados_32
+  - first:
+      213: 8262116019113488201
+    second: personajes_tirados_33
+  - first:
+      213: -7692765314814779805
+    second: personajes_tirados_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: personajes_tirados_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 503
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d6fb8bda8bd48d0800000000000000
+      internalID: -2860427132041990759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 542
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5779154ff6fbdace0800000000000000
+      internalID: -1392246222226352267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 501
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308d1d721be3c6a00800000000000000
+      internalID: 751044168462227459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 528
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871902e5201bd23e0800000000000000
+      internalID: -2076809229420686984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_4
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 523
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f733e1c51142920800000000000000
+      internalID: 2964513542057983783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 486
+        width: 65
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78984b4861af3bb50800000000000000
+      internalID: 6607900052905298311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 484
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec46ab7eb3c63e6c0800000000000000
+      internalID: -4115326629939878706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 402
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bfbc7f114f4b9a0800000000000000
+      internalID: -6218076827482850447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 444
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fef8595980a75f20800000000000000
+      internalID: 3411371754526408435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 440
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580e579c3956098d0800000000000000
+      internalID: -2841659679456239483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_10
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 432
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f2af25a18c5ae20800000000000000
+      internalID: 3361312712288775977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 426
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cd0653d7cb932d0800000000000000
+      internalID: -3298398006119703460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_12
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 401
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3433a4eb0cbb27a0800000000000000
+      internalID: -6400815686110464962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_13
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 390
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b4b2c57a668f5f0800000000000000
+      internalID: -722714871201051785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_14
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 388
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42b62bf98c2a0b00800000000000000
+      internalID: 795497255320072783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 309
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424b20d5896637df0800000000000000
+      internalID: -183690355210537948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 305
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba86ba4ffba02d810800000000000000
+      internalID: 1788503821579413675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_17
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 294
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0a684482701a740800000000000000
+      internalID: 5161414517473059018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 337
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67eb6a027ce7bc70800000000000000
+      internalID: 8986911555986384749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_19
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 293
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e7bd5e5517bd650800000000000000
+      internalID: 6258720720903962236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 214
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d96ec25e19dcd30800000000000000
+      internalID: 4453376020026137876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_21
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 210
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e156f19fdb47fee0800000000000000
+      internalID: -1227428949836541467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_22
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 202
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a502da9b831830110800000000000000
+      internalID: 1225965604208189530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 246
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b8b43d4f80e5900800000000000000
+      internalID: 674986841762138883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_24
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 200
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ff759fd874d8390800000000000000
+      internalID: -7814511103318687943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 123
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12e377edd76ec810800000000000000
+      internalID: 1787480304881230365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_26
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 119
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaf9cb452effb560800000000000000
+      internalID: 7331858154521230028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 109
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876f54be49ab71d50800000000000000
+      internalID: 6708035318756800120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 151
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7721ba58844a3b940800000000000000
+      internalID: 5310769016987128439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_29
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 109
+        width: 63
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623db86fb8b6fa520800000000000000
+      internalID: 2715507349208683302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 65
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76896af01e100870800000000000000
+      internalID: 8646944342820882045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_31
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 26
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2010726f5874ea40800000000000000
+      internalID: 5396570604565434412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea8dc3d3d0c7c960800000000000000
+      internalID: 7622272910371949295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_33
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 58
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fe25caebee8a270800000000000000
+      internalID: 8262116019113488201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: personajes_tirados_34
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 16
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ed40644becd3590800000000000000
+      internalID: -7692765314814779805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      personajes_tirados_0: -2860427132041990759
+      personajes_tirados_1: -1392246222226352267
+      personajes_tirados_10: 3361312712288775977
+      personajes_tirados_11: -3298398006119703460
+      personajes_tirados_12: -6400815686110464962
+      personajes_tirados_13: -722714871201051785
+      personajes_tirados_14: 795497255320072783
+      personajes_tirados_15: -183690355210537948
+      personajes_tirados_16: 1788503821579413675
+      personajes_tirados_17: 5161414517473059018
+      personajes_tirados_18: 8986911555986384749
+      personajes_tirados_19: 6258720720903962236
+      personajes_tirados_2: 751044168462227459
+      personajes_tirados_20: 4453376020026137876
+      personajes_tirados_21: -1227428949836541467
+      personajes_tirados_22: 1225965604208189530
+      personajes_tirados_23: 674986841762138883
+      personajes_tirados_24: -7814511103318687943
+      personajes_tirados_25: 1787480304881230365
+      personajes_tirados_26: 7331858154521230028
+      personajes_tirados_27: 6708035318756800120
+      personajes_tirados_28: 5310769016987128439
+      personajes_tirados_29: 2715507349208683302
+      personajes_tirados_3: -2076809229420686984
+      personajes_tirados_30: 8646944342820882045
+      personajes_tirados_31: 5396570604565434412
+      personajes_tirados_32: 7622272910371949295
+      personajes_tirados_33: 8262116019113488201
+      personajes_tirados_34: -7692765314814779805
+      personajes_tirados_4: 2964513542057983783
+      personajes_tirados_5: 6607900052905298311
+      personajes_tirados_6: -4115326629939878706
+      personajes_tirados_7: -6218076827482850447
+      personajes_tirados_8: 3411371754526408435
+      personajes_tirados_9: -2841659679456239483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

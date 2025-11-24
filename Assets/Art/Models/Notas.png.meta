@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: e5ee96e80be9c6741aaf806436002561
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 238083683178639290
+    second: Notas_0
+  - first:
+      213: -9033063015121354010
+    second: Notas_1
+  - first:
+      213: -9034863711523534960
+    second: Notas_2
+  - first:
+      213: 2881308234604294643
+    second: Notas_3
+  - first:
+      213: -8064134189822385265
+    second: Notas_4
+  - first:
+      213: -4584643113891636117
+    second: Notas_5
+  - first:
+      213: -4564711763696605049
+    second: Notas_6
+  - first:
+      213: -3200702619860198578
+    second: Notas_7
+  - first:
+      213: -8024797974335608640
+    second: Notas_8
+  - first:
+      213: -2217880578484583354
+    second: Notas_9
+  - first:
+      213: -9188005215572271699
+    second: Notas_10
+  - first:
+      213: 3197531795870772977
+    second: Notas_11
+  - first:
+      213: -8914443368478800366
+    second: Notas_12
+  - first:
+      213: 6957346047995140016
+    second: Notas_13
+  - first:
+      213: 6583724781622342590
+    second: Notas_14
+  - first:
+      213: 5230192307374393396
+    second: Notas_15
+  - first:
+      213: -6865109334587078854
+    second: Notas_16
+  - first:
+      213: -1897651332711872471
+    second: Notas_17
+  - first:
+      213: -1541444944596932481
+    second: Notas_18
+  - first:
+      213: 55138297228141420
+    second: Notas_19
+  - first:
+      213: 4153544721843376361
+    second: Notas_20
+  - first:
+      213: 5522581004450921016
+    second: Notas_21
+  - first:
+      213: 7337896858285913224
+    second: Notas_22
+  - first:
+      213: -1299686999745678980
+    second: Notas_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Notas_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 508
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfeda239d7dd4300800000000000000
+      internalID: 238083683178639290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 506
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e209f50c0d14a280800000000000000
+      internalID: -9033063015121354010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 497
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0978298b257bd9280800000000000000
+      internalID: -9034863711523534960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_3
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 494
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f13ff3d2967cf720800000000000000
+      internalID: 2881308234604294643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 410
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83ed821ea0761090800000000000000
+      internalID: -8064134189822385265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 407
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c5c8ed0631060c0800000000000000
+      internalID: -4584643113891636117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 398
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78821d6f5d2e6a0c0800000000000000
+      internalID: -4564711763696605049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 392
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b129fdce1d493d0800000000000000
+      internalID: -3200702619860198578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 312
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8a37172c032a090800000000000000
+      internalID: -8024797974335608640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 309
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644403d5d518831e0800000000000000
+      internalID: -2217880578484583354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_10
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 301
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadd063cfe5ad7080800000000000000
+      internalID: -9188005215572271699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_11
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 296
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fee4e22a3aef5c20800000000000000
+      internalID: 3197531795870772977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 219
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2160c73bcf8894480800000000000000
+      internalID: -8914443368478800366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_13
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 216
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7d73a7e557d8060800000000000000
+      internalID: 6957346047995140016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 206
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3398b8ec61e5b50800000000000000
+      internalID: 6583724781622342590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 202
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438080c5130659840800000000000000
+      internalID: 5230192307374393396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 125
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3708bfde6b3ab0a0800000000000000
+      internalID: -6865109334587078854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 123
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9288926ca203aa5e0800000000000000
+      internalID: -1897651332711872471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_18
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 115
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f786a746dffab9ae0800000000000000
+      internalID: -1541444944596932481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_19
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 110
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63adcb3df3e3c000800000000000000
+      internalID: 55138297228141420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 32
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e05c280bea54a930800000000000000
+      internalID: 4153544721843376361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_21
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 30
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83afd95e92624ac40800000000000000
+      internalID: 5522581004450921016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_22
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 23
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8843694905275d560800000000000000
+      internalID: 7337896858285913224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Notas_23
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 15
+        width: 82
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7137fc4f8596fde0800000000000000
+      internalID: -1299686999745678980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Notas_0: 238083683178639290
+      Notas_1: -9033063015121354010
+      Notas_10: -9188005215572271699
+      Notas_11: 3197531795870772977
+      Notas_12: -8914443368478800366
+      Notas_13: 6957346047995140016
+      Notas_14: 6583724781622342590
+      Notas_15: 5230192307374393396
+      Notas_16: -6865109334587078854
+      Notas_17: -1897651332711872471
+      Notas_18: -1541444944596932481
+      Notas_19: 55138297228141420
+      Notas_2: -9034863711523534960
+      Notas_20: 4153544721843376361
+      Notas_21: 5522581004450921016
+      Notas_22: 7337896858285913224
+      Notas_23: -1299686999745678980
+      Notas_3: 2881308234604294643
+      Notas_4: -8064134189822385265
+      Notas_5: -4584643113891636117
+      Notas_6: -4564711763696605049
+      Notas_7: -3200702619860198578
+      Notas_8: -8024797974335608640
+      Notas_9: -2217880578484583354
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

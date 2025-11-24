@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MapaFinal");
     }
 
     public void OpenSettings()
