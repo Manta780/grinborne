@@ -6,13 +6,18 @@ public class SurvivorDialogue : MonoBehaviour
 {
     [Header("UI")]
     public TextMeshProUGUI dialogueTextUI;
-    public TextMeshProUGUI speakerNameText;        // <-- Namebox
+    public TextMeshProUGUI speakerNameText;        
     public GameObject dialoguePanel;
     public Button nextButton;
 
     [Header("Diálogo")]
-    public string[] lines;                         // Líneas normales
-    public string[] speakerNames;                  // <-- SOLO nombres, mismo tamaño que lines[]
+    public string[] lines;                         
+    public string[] speakerNames;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip doorSound;   
+    public int doorSoundIndex = 13; 
 
     private int index = 0;
     private bool isOpen = false;
@@ -45,11 +50,16 @@ public class SurvivorDialogue : MonoBehaviour
         {
             dialogueTextUI.text = lines[index];
 
-            // Actualizar Namebox
             if (speakerNames != null && speakerNames.Length > index)
                 speakerNameText.text = speakerNames[index];
             else
-                speakerNameText.text = ""; // por si acaso
+                speakerNameText.text = "";
+
+            // SONIDO AQUÍ
+            if (index == doorSoundIndex && doorSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(doorSound);
+            }
         }
         else
         {
@@ -68,7 +78,6 @@ public class SurvivorDialogue : MonoBehaviour
         isOpen = false;
         dialoguePanel.SetActive(false);
 
-        // Pasar a etapa de decisiones
         QuestManager3.Instance.StartDecisionStage();
     }
 }
