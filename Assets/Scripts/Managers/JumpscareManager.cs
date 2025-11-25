@@ -7,7 +7,7 @@ public class JumpscareManager : MonoBehaviour
     public GameObject jumpscarePanel;
     public AudioSource jumpscareAudio;
     public float afterDelay = 2f;
-    public string deathSceneName = "MainMenuScene"; // donde reintentar
+    public string deathSceneName = "Creditos"; // donde reintentar
 
     private void Awake()
     {
