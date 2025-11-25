@@ -401163,7 +401163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarTank
   finalSceneName: MainMenu
-  fillDelay: 2
+  fillDelay: 6
 --- !u!1 &1734126066
 GameObject:
   m_ObjectHideFlags: 0
