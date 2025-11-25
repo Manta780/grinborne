@@ -26,11 +26,10 @@ public class DecisionPanel : MonoBehaviour
 
     private void OnSacrifice()
     {
-        // activar jumpscare y mostrar pantalla de muerte
-        QuestManager3.Instance.PlayerSacrifice();
-        // asumiendo que tienes un JumpscareManager que muestra la imagen/sonido y luego carga escena
         JumpscareManager.Instance.PlayFinalSacrifice();
+        QuestManager3.Instance.PlayerSacrifice();
     }
+
 
     private void OnEscape()
     {
