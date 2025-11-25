@@ -26,6 +26,10 @@ public class QuestManager3 : MonoBehaviour
     [Header("Estado")]
     public QuestStage currentStage = QuestStage.None;
 
+    [Header("Panels")]
+    public DecisionPanel decisionPanel;
+
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -81,9 +85,15 @@ public class QuestManager3 : MonoBehaviour
     public void StartDecisionStage()
     {
         if (currentStage != QuestStage.TalkSurvivor) return;
+
         currentStage = QuestStage.DecisionMade;
         SetMissionText("Decide: Sacrificarte o escapar (elige)");
+
+        // MOSTRAR PANEL DE DECISIÓN
+        if (decisionPanel != null)
+            decisionPanel.Show();
     }
+
 
     // Si el jugador decide sacrificarse:
     public void PlayerSacrifice()

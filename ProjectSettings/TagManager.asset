@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Arbol
   - FishingZone
+  - Player pickup
   layers:
   - Default
   - TransparentFX
